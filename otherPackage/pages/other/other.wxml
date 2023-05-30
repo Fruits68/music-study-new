@@ -1,0 +1,32 @@
+ <view class="recommendContainer">
+    <!-- 头部区域 -->
+    <NavHeader title="" nav="NIHAOMA专属歌单"></NavHeader>
+
+    <!-- 内容区 -->
+    <scroll-view class="recommendScroll" enable-flex scroll-x>
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+        <image src="{{recommendItem.picUrl}}"></image>
+        <text>{{recommendItem.name}}</text>
+      </view>
+    </scroll-view>
+
+ <NavHeader title="" nav="今日编辑推荐"></NavHeader>
+
+    <!-- 内容区 -->
+    <scroll-view class="recommendScroll" enable-flex scroll-x>
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+        <image src="{{recommendItem.picUrl}}"></image>
+        <text>{{recommendItem.name}}</text>
+      </view>
+    </scroll-view>
+
+     <NavHeader title="" nav="祝你晚安"></NavHeader>
+
+    <!-- 内容区 -->
+    <scroll-view class="recommendScroll" enable-flex scroll-x>
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+        <image src="{{recommendItem.picUrl}}"></image>
+        <text>{{recommendItem.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
